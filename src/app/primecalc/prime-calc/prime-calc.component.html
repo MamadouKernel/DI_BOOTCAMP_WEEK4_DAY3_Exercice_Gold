@@ -1,0 +1,8 @@
+<div>
+    <input [(ngModel)]="number" placeholder="Enter a number">
+    <button (click)="checkPrime()">Check Prime</button>
+    <div *ngIf="isPrime !== undefined">
+      <p *ngIf="isPrime">{{number}} is a prime number</p>
+      <p *ngIf="!isPrime">{{number}} is not a prime number</p>
+    </div>
+</div>
